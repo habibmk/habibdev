@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      color: #333;
-      background-color: #fff;
+      color: #000;
+      background-color:  #fbfcfc;
       line-height: 1.6;
     }
 
@@ -21,9 +21,9 @@
       align-items: center;
       padding: 0 20px;
       border-radius: 0 0 20px 20px;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      
+      background-color:  #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
     }
 
     .navbar-brand a {
@@ -31,6 +31,7 @@
       color: #000;
       font-weigh: bold;
       font-size: 24px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
     nav a:not(:last-child): after {
       content: " | ";
@@ -53,19 +54,6 @@
       width: 100%;
       box-sizing: border-box;
       padding: 2rem 1rem;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      box-sizing: border-box;
-    }
-
-    .section-fullwidth {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      width: 100%;
     }
 
     .element-size-25,
@@ -92,26 +80,6 @@
       flex: 0 0 100%;
     }
 
-    figcaption {
-      text-align: center;
-      font-size: 0.8em;
-      /* Adjust size as needed */
-      margin-top: 10px;
-      /* Adjust spacing as needed */
-    }
-
-    figcaption h6 {
-      margin: 0;
-      font-size: 1em;
-      /* Adjust size as needed */
-    }
-
-    figcaption span {
-      display: block;
-      font-size: 0.8em;
-      /* Adjust size as needed */
-    }
-
     .social-container {
       display: flex;
       align-items: center;
@@ -122,7 +90,7 @@
     .social-container p {
       margin: 0;
       font-size: 1rem;
-      color: #333;
+      color: #000;
     }
 
     .social-icons {
@@ -138,7 +106,7 @@
       height: 40px;
       border-radius: 50%;
       background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       transition: background-color 0.3s, transform 0.3s;
     }
 
@@ -169,18 +137,18 @@
 
     .project-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     }
 
     .project-card h3 a {
       text-decoration: none;
-      color: #2575fc;
+      color: #000;
       font-size: 1.25rem;
       transition: color 0.3s;
     }
 
     .project-card h3 a:hover {
-      color: #1e3a8a;
+      color: #0056b3;
     }
 
     .project-card p {
@@ -189,7 +157,7 @@
     }
 
     .footer {
-      background: white;
+      background:  #fff;
       color: #000;
       text-align: center;
       padding: 1rem;
@@ -203,7 +171,7 @@
     }
 
     .footer a {
-      color: #000;
+      color: #0056b3;
       text-decoration: none;
       font-weight: bold;
     }
@@ -242,7 +210,10 @@
 
 <body>
   <nav class="navbar">
-    <h1 class="navbar-brand"><a href="#">Prixima.ng</a></h1>
+        <h1 class="navbar-brand">
+            <a href="#">Prixima</a>
+        </h1> 
+</div>
     <div class="nav-items">
       <a href="index.html" class="nav-item">| Home</a>
       <a href="blog.html" class="nav-item">| Blog |</a>
@@ -251,19 +222,18 @@
 
 
   <div class="element-size-75">
-    <div class="cs-heading-sec">
+    <div class="cs-heading-sec"><br><br><br>
       <h1>Hello World!</h1>
-      <p>Hi there 👋, 
-
-      I'm Habib Muhammad.  the founder of Prixima. With a passion for web development and a commitment to innovation, I transform ideas into exceptional online experiences.<br><br>
+      <p>Hi there 👋,<br><br>I'm Habib Muhammad, the founder of Prixima. I am a passionate web developer based in Nigeria. With a dedication to web development and a commitment to innovation, I transform ideas into exceptional online experiences.<br><br>
 
       🎶 Spotify jams + half-baked side-projects = my vibe! 😅. I'm living my best life in VSCode & Replit while vibing with open-source tech. 🚀</p>
+
       <div class="social-container">
         <p class="leading-none">You can keep up with me here:</p>
         <div class="social-icons">
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="RSS">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              stroke="#0056b3" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
               <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -272,7 +242,7 @@
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-width="1.5" stroke="#0056b3" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -282,7 +252,7 @@
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-width="1.5" stroke="#0056b3" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -295,14 +265,14 @@
 
           <a href="https://www.facebook.com/habiib.fb?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              stroke-width="1.5" stroke="#0056b3" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10c5.5 0 10-4.5 10-10s-4.5-10-10-10zm.5 17v-6h-2v-2h2v-1.5c0-1.5.5-2.5 2-2.5h1.5v2h-1.5c-.5 0-1 .5-1 1v1.5h2l-.5 2h-1.5z"></path>
             </svg>
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-width="1.5" stroke="#0056b3" fill="none" stroke-linecap="round"
               stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -313,12 +283,13 @@
         </div>
       </div>
       <br><br><br>
-      <div class="element-size-100">
-        <div class="cs-heading-sec">
-          <h1>PROJECTs</h1>
+
+
+        <div >
+          <h1 style="color: #0056b3;" >PROJECTs</h1>
         </div>
-      </div>
-      <div class="section-fullwidth">
+
+
         <div class="element-size-50">
           <div class="project-card">
             <h3><a href="https://habibmk.github.io/Computer-Science-Department/index.html">Department of
@@ -334,9 +305,9 @@
             <p>Check out my personal website—it's all HTML!</p>
           </div>
         </div>
-      </div>
 
-      <div class="section-fullwidth">
+
+
         <div class="element-size-50">
           <div class="project-card">
             <h3><a href="https://habibmk.github.io/uploading/index.html">Uploading..</a></h3>
@@ -350,10 +321,11 @@
             <p>Site under construction</p>
           </div>
         </div>
-      </div>
+
 
       <br><br><br>
-      <h4>Services</h4>
+      <h4 style="font-size: 20px;
+        color: #0056b3;">Services</h4>
       <ul>
         <li>Prototyping</li>
         <li>Wireframing</li>
